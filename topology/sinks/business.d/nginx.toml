@@ -1,9 +1,7 @@
 version = "2.0"
-
 [sink_group]
-name = "demo"
-oml = ["*"]
-tags = ["biz:demo"]
+name = "nginx"
+rule= ["/nginx/*"]
 
 [[sink_group.sinks]]
 name = "json"
@@ -11,4 +9,4 @@ connect = "file_json_sink"
 tags = ["sink:json"]
 
 [sink_group.sinks.params]
-file = "demo.json"
+file = "nginx.json"

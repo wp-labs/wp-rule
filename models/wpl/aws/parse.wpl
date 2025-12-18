@@ -1,4 +1,4 @@
-package /aws/ {
+package /aws {
    rule aws {
         (
             symbol(http),

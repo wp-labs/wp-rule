@@ -1,0 +1,12 @@
+version = "2.0"
+[sink_group]
+name = "aws"
+rule= ["/aws/*"]
+
+[[sink_group.sinks]]
+name = "json"
+connect = "file_json_sink"
+tags = ["sink:json"]
+
+[sink_group.sinks.params]
+file = "aws.json"
