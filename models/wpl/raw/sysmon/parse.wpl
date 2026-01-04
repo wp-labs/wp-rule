@@ -1,4 +1,4 @@
-package /sysmon {
+package /raw/sys {
    rule sysmon {
         (_:pri<<,>>,3*_,_),(_\S\y\s\m\o\n\:,
         json(

@@ -1,4 +1,4 @@
-package /aws {
+package /raw/cloud {
    rule aws {
         (
             symbol(http),
